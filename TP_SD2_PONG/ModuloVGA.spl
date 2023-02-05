@@ -1,0 +1,12 @@
+[Inputs]
+clk
+Leer
+Escribir
+=DatosAEscribir[31:0]=
+=DirecAAcceder[31:0]=
+[Outputs]
+Vsync
+Hsync
+=RGB_8bits[7:0]=
+=memOut[31:0]=
+[BiDir]

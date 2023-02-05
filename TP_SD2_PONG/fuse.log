@@ -1,0 +1,35 @@
+Running: C:\Xilinx\14.7\ISE_DS\ISE\bin\nt64\unwrapped\fuse.exe -intstyle ise -incremental -lib secureip -o C:/Xilinx/ProyectosVarios/TP_SD2_NaveEspacial/tb_ModuloVGA_isim_beh.exe -prj C:/Xilinx/ProyectosVarios/TP_SD2_NaveEspacial/tb_ModuloVGA_beh.prj work.tb_ModuloVGA 
+ISim P.20131013 (signature 0x7708f090)
+Number of CPUs detected in this system: 4
+Turning on mult-threading, number of parallel sub-compilation jobs: 8 
+Determining compilation order of HDL files
+Parsing VHDL file "C:/Xilinx/ProyectosVarios/TP_SD2_NaveEspacial/Sync_vga.vhd" into library work
+Parsing VHDL file "C:/Xilinx/ProyectosVarios/TP_SD2_NaveEspacial/Mux_memoria_video.vhd" into library work
+Parsing VHDL file "C:/Xilinx/ProyectosVarios/TP_SD2_NaveEspacial/Memoria_video.vhd" into library work
+Parsing VHDL file "C:/Xilinx/ProyectosVarios/TP_SD2_NaveEspacial/Decodificador_colores.vhd" into library work
+Parsing VHDL file "C:/Xilinx/ProyectosVarios/TP_SD2_NaveEspacial/Controlador_salida.vhd" into library work
+Parsing VHDL file "C:/Xilinx/ProyectosVarios/TP_SD2_NaveEspacial/Codificador_memoria_video.vhd" into library work
+Parsing VHDL file "C:/Xilinx/ProyectosVarios/TP_SD2_NaveEspacial/Codificador_colores.vhd" into library work
+Parsing VHDL file "C:/Xilinx/ProyectosVarios/TP_SD2_NaveEspacial/ModuloVGA.vhd" into library work
+Parsing VHDL file "C:/Xilinx/ProyectosVarios/TP_SD2_NaveEspacial/Test_ModuloVGA.vhd" into library work
+Starting static elaboration
+Completed static elaboration
+Compiling package standard
+Compiling package std_logic_1164
+Compiling package numeric_std
+Compiling architecture behavioral of entity Codificador_colores [codificador_colores_default]
+Compiling architecture behavioral of entity Decodificador_colores [decodificador_colores_default]
+Compiling architecture behavioral of entity Codificador_memoria_video [codificador_memoria_video_defaul...]
+Compiling architecture behavioral of entity Mux_memoria_video [mux_memoria_video_default]
+Compiling architecture behavioral of entity Memoria_video [memoria_video_default]
+Compiling architecture behavioral of entity Sync_vga [sync_vga_default]
+Compiling architecture behavioral of entity Controlador_salida [controlador_salida_default]
+Compiling architecture behavioral of entity ModuloVGA [modulovga_default]
+Compiling architecture behavior of entity tb_modulovga
+Time Resolution for simulation is 1ps.
+Waiting for 4 sub-compilation(s) to finish...
+WARNING:Simulator - Unable to copy libPortabilityNOSH.dll to the simulation executable directory: boost::filesystem::copy_file: El sistema no puede encontrar la ruta especificada, "isim\tb_ModuloVGA_isim_beh.exe.sim\libPortability.dll".
+Compiled 20 VHDL Units
+Built simulation executable C:/Xilinx/ProyectosVarios/TP_SD2_NaveEspacial/tb_ModuloVGA_isim_beh.exe
+Fuse Memory Usage: 36100 KB
+Fuse CPU Usage: 1061 ms

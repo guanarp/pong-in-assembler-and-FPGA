@@ -1,0 +1,85 @@
+
+#Para usar el clock interno y eso
+
+NET "clk100mhz" LOC = V10 | IOSTANDARD = LVCMOS33 ; #clk de 100MHz
+# Define clock period for 50 MHz oscillator
+#NET "clk50mhz" PERIOD = 20.0ns HIGH 40%;
+ 
+ 
+ 
+NET "reset0" LOC = F17     | IOSTANDARD = LVCMOS33 | DRIVE = 8 | SLEW = FAST | PULLUP;  #DP1 RESET A 0
+NET "reset1" LOC = F18     | IOSTANDARD = LVCMOS33 | DRIVE = 8 | SLEW = FAST | PULLUP;  #DP2 RESET A 1
+
+#NET "reset0" LOC = K17     | IOSTANDARD = LVCMOS33 | DRIVE = 8 | SLEW = FAST | PULLUP;  #SW5 RESET A 0
+#NET "reset1" LOC = K18     | IOSTANDARD = LVCMOS33 | DRIVE = 8 | SLEW = FAST | PULLUP;  #SW6 RESET A 1
+
+NET "s"  					 LOC = M18     | IOSTANDARD = LVCMOS33 | DRIVE = 8 | SLEW = FAST | PULLUP; #SW1
+#NET "d"                  LOC = L18     | IOSTANDARD = LVCMOS33 | DRIVE = 8 | SLEW = FAST | PULLUP; #SW2
+NET "d"                  LOC = M16     | IOSTANDARD = LVCMOS33 | DRIVE = 8 | SLEW = FAST | PULLUP; #SW3
+NET "a"                  LOC = L17     | IOSTANDARD = LVCMOS33 | DRIVE = 8 | SLEW = FAST | PULLUP; #SW4
+NET "w"          LOC = K17     | IOSTANDARD = LVCMOS33 | DRIVE = 8 | SLEW = FAST | PULLUP; #SW5
+NET "p"                  LOC = K18     | IOSTANDARD = LVCMOS33 | DRIVE = 8 | SLEW = FAST | PULLUP; #SW6
+
+#VGA
+NET HSync                      	LOC = B12     | IOSTANDARD = LVCMOS33 | DRIVE = 8 | SLEW = FAST ;
+NET VSync                			LOC = A12     | IOSTANDARD = LVCMOS33 | DRIVE = 8 | SLEW = FAST ;
+
+NET RGB_8bits[7]                 LOC = C9      | IOSTANDARD = LVCMOS33 | DRIVE = 8 | SLEW = FAST ;
+NET RGB_8bits[6]                 LOC = B9      | IOSTANDARD = LVCMOS33 | DRIVE = 8 | SLEW = FAST ;
+NET RGB_8bits[5]                 LOC = A9      | IOSTANDARD = LVCMOS33 | DRIVE = 8 | SLEW = FAST ;
+
+NET RGB_8bits[4]                 LOC = C11     | IOSTANDARD = LVCMOS33 | DRIVE = 8 | SLEW = FAST ;
+NET RGB_8bits[3]                 LOC = A10     | IOSTANDARD = LVCMOS33 | DRIVE = 8 | SLEW = FAST ;
+NET RGB_8bits[2]                 LOC = C10     | IOSTANDARD = LVCMOS33 | DRIVE = 8 | SLEW = FAST ;
+
+NET RGB_8bits[1]                 LOC = A11     | IOSTANDARD = LVCMOS33 | DRIVE = 8 | SLEW = FAST ;
+NET RGB_8bits[0]                 LOC = B11     | IOSTANDARD = LVCMOS33 | DRIVE = 8 | SLEW = FAST ;
+
+#Botones que utilizaremos
+#NET "Left"								LOC = M18     | IOSTANDARD = LVCMOS33 | DRIVE = 8 | SLEW = FAST | PULLUP; #SW1
+#NET "right"								LOC = L18     | IOSTANDARD = LVCMOS33 | DRIVE = 8 | SLEW = FAST | PULLUP; #SW2
+#NET "Down"								LOC = M16     | IOSTANDARD = LVCMOS33 | DRIVE = 8 | SLEW = FAST | PULLUP; #SW3
+#NET "Up"									LOC = L17     | IOSTANDARD = LVCMOS33 | DRIVE = 8 | SLEW = FAST | PULLUP; #SW4
+#NET "RstGame"							LOC = K17     | IOSTANDARD = LVCMOS33 | DRIVE = 8 | SLEW = FAST | PULLUP; #SW5
+#NET "DoNothing"							LOC = K18     | IOSTANDARD = LVCMOS33 | DRIVE = 8 | SLEW = FAST | PULLUP; #SW6
+
+
+# puerto serial. 6-pin Accessory Header, J18
+#NET "rx"  LOC = "AA21" | IOSTANDARD = LVCMOS33 | SLEW = SLOW | DRIVE = 8; # J18_IO<1>
+#NET "tx"  LOC = "AB21" | IOSTANDARD = LVCMOS33 | SLEW = SLOW | DRIVE = 8; # J18_IO<2>
+#NET "atn" LOC = "AA19" | IOSTANDARD = LVCMOS33 | SLEW = SLOW | DRIVE = 8; # J18_IO<3>
+
+
+#--luces led viejas y eso
+#NET "salida<0>" LOC = "R20" | IOSTANDARD = LVCMOS33 | SLEW = SLOW | DRIVE = 8 ;
+#NET "salida<1>" LOC = "T19" | IOSTANDARD = LVCMOS33 | SLEW = SLOW | DRIVE = 8 ;
+#NET "salida<2>" LOC = "U20" | IOSTANDARD = LVCMOS33 | SLEW = SLOW | DRIVE = 8 ;
+#NET "salida<3>" LOC = "U19" | IOSTANDARD = LVCMOS33 | SLEW = SLOW | DRIVE = 8 ;
+#NET "salida<4>" LOC = "V19" | IOSTANDARD = LVCMOS33 | SLEW = SLOW | DRIVE = 8 ;
+#NET "salida<5>" LOC = "V20" | IOSTANDARD = LVCMOS33 | SLEW = SLOW | DRIVE = 8 ;
+#NET "salida<6>" LOC = "Y22" | IOSTANDARD = LVCMOS33 | SLEW = SLOW | DRIVE = 8 ;
+#NET "salida<7>" LOC = "W21" | IOSTANDARD = LVCMOS33 | SLEW = SLOW | DRIVE = 8 ;
+
+# líneas de control del LCD
+#NET "LCD_E" LOC = "AB4" | IOSTANDARD = LVCMOS33 | DRIVE = 8 | SLEW = SLOW ;
+#NET "LCD_RS" LOC = "Y14" | IOSTANDARD = LVCMOS33 | DRIVE = 8 | SLEW = SLOW ;
+#NET "LCD_RW" LOC = "W13" | IOSTANDARD = LVCMOS33 | DRIVE = 8 | SLEW = SLOW ;
+#NET "LCD_DB<7>" LOC = "Y15" | IOSTANDARD = LVCMOS33 | DRIVE = 8 | SLEW = SLOW ;
+#NET "LCD_DB<6>" LOC = "AB16" | IOSTANDARD = LVCMOS33 | DRIVE = 8 | SLEW = SLOW ;
+#NET "LCD_DB<5>" LOC = "Y16" | IOSTANDARD = LVCMOS33 | DRIVE = 8 | SLEW = SLOW ;
+#NET "LCD_DB<4>" LOC = "AA12" | IOSTANDARD = LVCMOS33 | DRIVE = 8 | SLEW = SLOW ;
+#NET "LCD_DB<3>" LOC = "AB12" | IOSTANDARD = LVCMOS33 | DRIVE = 8 | SLEW = SLOW ;
+#NET "LCD_DB<2>" LOC = "AB17" | IOSTANDARD = LVCMOS33 | DRIVE = 8 | SLEW = SLOW ;
+#NET "LCD_DB<1>" LOC = "AB18" | IOSTANDARD = LVCMOS33 | DRIVE = 8 | SLEW = SLOW ;
+#NET "LCD_DB<0>" LOC = "Y13" | IOSTANDARD = LVCMOS33 | DRIVE = 8 | SLEW = SLOW ;
+
+
+# south y north
+#NET "north" LOC = "T14" | IOSTANDARD = LVCMOS33 | PULLDOWN ;
+#NET "south" LOC = "T15" | IOSTANDARD = LVCMOS33 | PULLDOWN ;
+
+# llaves
+#NET "SW<0>" LOC = "V8" | IOSTANDARD = LVCMOS33 ;
+#NET "SW<1>" LOC = "U10"| IOSTANDARD = LVCMOS33 ;
+#NET "SW<2>" LOC = "U8" | IOSTANDARD = LVCMOS33 ;
+#NET "SW<3>" LOC = "T9" | IOSTANDARD = LVCMOS33 ;

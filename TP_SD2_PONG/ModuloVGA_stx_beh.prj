@@ -1,0 +1,8 @@
+vhdl isim_temp "Sync_vga.vhd"
+vhdl isim_temp "Mux_memoria_video.vhd"
+vhdl isim_temp "Memoria_video.vhd"
+vhdl isim_temp "Decodificador_colores.vhd"
+vhdl isim_temp "Controlador_salida.vhd"
+vhdl isim_temp "Codificador_memoria_video.vhd"
+vhdl isim_temp "Codificador_colores.vhd"
+vhdl isim_temp "ModuloVGA.vhd"

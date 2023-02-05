@@ -1,0 +1,36 @@
+Command line:
+   tb_ModuloVGA_isim_beh.exe
+     -simmode  gui
+     -simrunnum  0
+     -socket  53849
+
+Tue Nov 02 16:04:52 2021
+
+
+ Elaboration Time: 0.34375 sec
+
+ Current Memory Usage: 5809.01 Meg
+
+ Total Signals          : 58
+ Total Nets             : 3182
+ Total Signal Drivers   : 23
+ Total Blocks           : 11
+ Total Primitive Blocks : 9
+ Total Processes        : 15
+ Total Traceable Variables  : 14
+ Total Scalar Nets and Variables : 3666
+Total Line Count : 63
+Total Line Count : 63
+Total Line Count : 63
+Total Line Count : 63
+Total Line Count : 63
+Total Line Count : 63
+Total Line Count : 63
+Total Line Count : 63
+
+ Total Simulation Time: 20.9844 sec
+
+ Current Memory Usage: 4708.01 Meg
+
+Tue Nov 02 17:37:26 2021
+

@@ -1,0 +1,8 @@
+INTSTYLE=ise
+INFILE=C:\Users\josec\Documents\FIUNA\8vo\SD2\Josias\MiPongJosias\TP_SD2_NaveEspacial\mips.ncd
+OUTFILE=C:\Users\josec\Documents\FIUNA\8vo\SD2\Josias\MiPongJosias\TP_SD2_NaveEspacial\mips.bit
+FAMILY=Spartan6
+PART=xc6slx9-3csg324
+WORKINGDIR=C:\Users\josec\Documents\FIUNA\8vo\SD2\Josias\MiPongJosias\TP_SD2_NaveEspacial
+LICENSE=WebPack
+USER_INFO=174169581_174169582_0_836
